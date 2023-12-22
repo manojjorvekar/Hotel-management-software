@@ -1,0 +1,54 @@
+
+
+
+<div style="text-align:center">
+  <br>
+  <br>
+  <br> <br>
+  <p>Welcome , Please fill the Details! </p>
+  <br>
+ 
+<form (ngSubmit)="onSubmit(f.value)" #f="ngForm">
+
+    
+  <div class="row mb-3">
+      <label for="inputPassword3" class="col-sm-2 col-form-label">Product Name</label>
+      <div class="col-sm-10">
+        <input
+         type="text"
+          class="form-control"
+           id="name"
+           ngModel
+           name="name">
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <label for="inputPassword3" class="col-sm-2 col-form-label">Table No.</label>
+      <div class="col-sm-10">
+        <input
+         type="text"
+          class="form-control"
+           id="price"
+           ngModel
+           name="price">
+      </div>
+    </div>
+    
+    <div class="row mb-3">
+      <label for="inputPassword3" class="col-sm-2 col-form-label">quantity</label>
+      <div class="col-sm-10">
+        <input
+         type="text"
+          class="form-control"
+           id="quantity"
+           ngModel
+           name="quantity">
+      </div>
+    </div>
+    <br>
+  
+  <!-- <button type="submit" class="btn btn-primary">Confirm</button> -->
+  <button type="submit" class="btn btn-success">Confirm</button>
+</form>
+</div>

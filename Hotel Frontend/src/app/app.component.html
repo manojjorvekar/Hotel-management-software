@@ -1,0 +1,69 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand"routerLink="M_order"> Make_order    </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+
+          <li 
+          class="nav-item" 
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{exact:true}">
+            <a class="nav-link active" aria-current="page" routerLink="g_order">  My_orders  </a>
+          </li>
+
+          <li *ngIf="!this.myService.sLogin"
+          class="nav-item" routerLinkActive="active">
+            <a class="nav-link" routerLink="Auth"> Login/SignUp </a>
+          </li>
+
+          <li *ngIf="this.myService.sLogin"
+          class="nav-item" routerLinkActive="active">
+            <a class="nav-link" routerLink="special">   Today's_special  </a>
+          </li>
+
+          <li  *ngIf="this.myService.sLogin"
+          class="nav-item" routerLinkActive="active">
+            <a class="nav-link" routerLink="for_kids">     for_Kids    </a>
+
+            </li>
+
+
+            <li  *ngIf="this.myService.sLogin"
+            class="nav-item" routerLinkActive="active">
+              <a class="nav-link" routerLink="Menu">    Menu     </a>
+            </li>
+
+            <li  *ngIf="this.myService.sLogin"
+            class="nav-item" routerLinkActive="active">
+              <a class="nav-link" routerLink="snacks">      Snacks     </a>
+            </li>
+
+            <!-- <li  *ngIf="this.myService.sLogin">
+              <button class="btn btn-primary" (click)="logout()"> logout</button>
+            </li> -->
+
+          <!-- <li  *ngIf="this.myService.sLogin"
+          class="nav-item" routerLinkActive="active">
+            <a class="nav-link" routerLink="feedback">    Menu     </a>
+          </li> -->
+
+          <li  *ngIf="this.myService.sLogin">
+            <!-- <button class="btn btn-primary" (click)="logout()"> logout</button> -->
+            <button type="button" class="btn btn-danger"(click)="logout()">logout</button>
+
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+
+<router-outlet></router-outlet>

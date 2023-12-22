@@ -1,0 +1,115 @@
+
+<!-- <hr><hr>
+
+<h3>welcome to {{name}} restaurant</h3> -->
+<!-- <button class="btn btn-primary" (click)="clickme()"> pressme</button>
+<br><br> -->
+<!--<img src={{path}}/>   --> 
+<!-- <input type="text" [(ngModel)]="name">
+<h3>my text is {{name}}</h3>
+<img [src]=path/>  -->
+
+
+
+
+
+<!--...--> 
+<!-- <div *ngIf="orderB">
+<h1>CONGRATS</h1>
+</div>
+
+
+<ng-template #logout>
+    <h2>welcome to User profile</h2>
+</ng-template>
+ -->
+
+
+<!-- 
+<button (click)="islogin=!islogin">click me</button>
+<div [ngSwitch]="islogin">
+
+<div *ngSwitchCase="true">
+  user is <strong>loged in</strong> 
+    </div>
+
+<div *ngSwitchCase="false">
+    user is not loged in
+    </div>
+
+    <div *ngSwitchDefault>
+        please click
+        </div> -->
+<!-- 
+
+</div> -->
+<!-- <hr><hr>
+
+<div style="background-color:dimgrey;">
+    <div class ="container" >
+        <div class="row">
+            <div class="col-md-10">
+                <table class="table">
+                    
+                    <thead class="thead-dark"  >
+                        
+                        <tr>
+                            <th>Id.</th>
+                            <th>producut name</th>
+                            <th>producut price</th>
+                            <th>producut quantity</th>
+                        </tr>
+                   
+                    </thead>
+                    <tbody >
+                        <tr *ngFor="let poduct of poductA" >
+                            <td>{{poduct.id}}</td>
+                            <td>{{poduct.name}}</td>
+                            <td>{{poduct.price}}</td>
+                            <td>{{poduct.quantity}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+    
+            </div>
+        </div>
+    </div>
+ -->
+
+ <br>
+ <br>
+ <div style="text-align:center">
+ <h3>Your Orders are :</h3>
+</div>
+ <!-- <button type="button" class="btn btn-primary"(click)="getMeproduct()">getOrders</button>
+ <button type="button" class="btn btn-outline-success"(click)="getMeproduct()">getOrders</button> 
+<br> -->
+<br>
+<br>
+
+ <div style="background-color:rgb(242, 243, 245);">
+    
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th>Id.</th>
+            <th>producut name</th>
+            <th>producut price</th>
+            <th>producut quantity</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let product of poductA" >
+            <td> {{ product.id }} </td>
+            <td> {{ product.name }} </td>
+            <td> {{ product.price}} </td>
+            <td> {{ product.quantity}} </td>
+            <td>
+                <!-- <button (click) = "updateEmployee(employee.id)" class = "btn btn-info"> Update</button> -->
+                <button (click) = "deleteProduct(product.id)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+               <!-- <button (click) = "employeeDetails(employee.id)" class = "btn btn-info" style="margin-left: 10px"> View</button> -->
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>

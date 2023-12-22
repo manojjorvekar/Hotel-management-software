@@ -1,0 +1,46 @@
+
+<h2>Welcome to Vedanta Hotels</h2>
+<!-- <button (click)="placeNewOrder()">place new order</button>
+
+<button (click)="callWaiter()"> call waiter</button> -->
+
+
+<hr>
+
+
+
+<div class ="container" >
+    <div class="row">
+        <div class="col-md-10">
+            <table class="table">
+                
+                <thead class="thead-dark"  >
+                    
+                    <tr>
+                        <th>SR.NO.</th>
+                        <th>producut image</th>
+                        <th>producut name</th>
+                        <th>producut id</th>
+                        <th>producut price</th>
+                    </tr>
+               
+                </thead>
+                <tbody >
+                    <tr *ngFor="let mypro of products;index as i" >
+                        <td>{{i+1}}</td>
+                        <td><img [src]=mypro.img width="120" alt="" height=""/></td>
+                        <td>{{mypro.name}}</td>
+                        <td>{{mypro.id}}</td>
+                        <td>{{mypro.price}}</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+</div>
+<!-- <h2>menu componenet ens here</h2> -->
+
+
+
